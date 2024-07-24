@@ -1,8 +1,8 @@
-// tests/algorithms/ridge_regression_test.rs
+// tests/algorithms/lasso_regression_test.rs
 extern crate rust_ml;
 
 use rust_ml::algorithms::Algorithm;
-use rust_ml::algorithms::regression::RidgeRegression;
+use rust_ml::algorithms::regression::LassoRegression;
 
 #[cfg(test)]
 mod tests {
@@ -10,7 +10,7 @@ mod tests {
 
     #[test]
     fn test_train() {
-        let mut model = RidgeRegression::new(0.01,1000);
+        let mut model = LassoRegression::new(0.01,1000, 0.01);
         // create dummy data
         let data = vec![vec![1.0, 2.0], vec![3.0, 4.0], vec![5.0, 6.0]];
         let labels = vec![3.0, 7.0, 11.0];
@@ -27,7 +27,7 @@ mod tests {
 
     #[test]
     fn test_predict() {
-        let mut model = RidgeRegression::new(0.001,1000);
+        let mut model = LassoRegression::new(0.001,1000, 0.01);
         // create dummy data
         let data = vec![vec![1.0, 2.0], vec![3.0, 4.0], vec![5.0, 6.0]];
         let labels = vec![3.0, 7.0, 11.0];

@@ -2,8 +2,8 @@
 #### 1.1 Regression
 - **1.1.1 Linear Regression**
 - **1.1.2 Polynomial Regression**
-- **1.1.3 Ridge Regression**
-- **1.1.4 Lasso Regression**
+- **1.1.3 Ridge Regression (L2)**
+- **1.1.4 Lasso Regression (L1)**
 - **1.1.5 Elastic Net Regression**
 - **1.1.6 Support Vector Regression (SVR)**
 - **1.1.7 Decision Tree Regression**
